@@ -19,6 +19,6 @@ npm run build
 ```
 npm run lint
 ```
-
+node -v = 16
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
