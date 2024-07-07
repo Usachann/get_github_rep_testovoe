@@ -1,4 +1,5 @@
 // src/store/index.js
+// src/store/index.js
 import Vue from "vue";
 import Vuex from "vuex";
 
@@ -10,7 +11,12 @@ export default new Vuex.Store({
   },
   mutations: {
     addFavorite(state, repo) {
-      state.favorites.push(repo);
+      const isDuplicate = state.favorites.some(
+        (favorite) => favorite.id === repo.id
+      );
+      if (!isDuplicate) {
+        state.favorites.push(repo);
+      }
     },
   },
 });

@@ -8,7 +8,7 @@
     />
     <div v-if="isLoading">Поиск нужных репозиториев...</div>
     <div class="items-container" v-else>
-      <RepoItem v-for="rep in repositories" :key="rep.id" :repo="rep" />
+      <RepoItem v-for="rep in repositories" :key="rep.id" :repo="rep" :button="true" />
     </div>
   </div>
 </template>

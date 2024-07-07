@@ -41,7 +41,7 @@ export default {
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 8px;
-  max-width: 600px;
+  max-width: 100%;
 }
 
 .repo-title {

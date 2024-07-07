@@ -18,7 +18,7 @@
       <router-link :to="`/repo/${repo.owner.login}/${repo.name}`"
         >Подробнее</router-link
       >
-      <button class="favorite-button" @click="addToFavorites(repo)">
+      <button v-if="button" class="favorite-button" @click="addToFavorites(repo)">
         Добавить в избранное
       </button>
     </div>
@@ -29,6 +29,7 @@
 export default {
   props: {
     repo: Object,
+    button: Boolean,
   },
   methods: {
     addToFavorites(repo) {
